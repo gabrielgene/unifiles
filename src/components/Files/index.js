@@ -1,23 +1,31 @@
 import React from 'react';
-import { Card, CardActions, CardHeader, CardMedia, CardTitle, CardText } from 'material-ui/Card';
+import FileCard from '../FileCard';
 import './style.css';
 
 const files = [
-  { name: 'calculo', file: 'calculo.pdf' },
-  { name: 'calculo', file: 'calculo.pdf' },
-  { name: 'calculo', file: 'calculo.pdf' },
-  { name: 'calculo', file: 'calculo.pdf' },
-  { name: 'calculo', file: 'calculo.pdf' },
+  { type: "Avaliação", subject: "Cálculo I", subtitle: "Derivadas e funções p...", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
+  { type: "Apostila", subject: "Cálculo I", subtitle: "Todos assuntos da u...", likes: "800", time: "Há 4 meses", lenght: "6 gb" },
+  { type: "Atividade", subject: "Cálculo I", subtitle: "Esbolçar gráficos", likes: "86", time: "Há 3 dias", lenght: "5,6 mb" },
+  { type: "Avaliação", subject: "Cálculo I", subtitle: "Derivadas e funções p...", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
+  { type: "Atividade", subject: "Cálculo I", subtitle: "Esbolçar gráficos", likes: "86", time: "Há 3 dias", lenght: "5,6 mb" },
+  { type: "Avaliação", subject: "Cálculo I", subtitle: "Derivadas e funções p...", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
+  { type: "Avaliação", subject: "Cálculo I", subtitle: "Derivadas e funções p...", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
+  { type: "Atividade", subject: "Cálculo I", subtitle: "Esbolçar gráficos", likes: "86", time: "Há 3 dias", lenght: "5,6 mb" },
+  { type: "Apostila", subject: "Cálculo I", subtitle: "Todos assuntos da u...", likes: "800", time: "Há 4 meses", lenght: "6 gb" },
+  { type: "Apostila", subject: "Cálculo I", subtitle: "Todos assuntos da u...", likes: "800", time: "Há 4 meses", lenght: "6 gb" },
 ]
 
 const filesList = files.map((file, i) => (
-  <Card key={i} className="cardFiles" >
-    <CardHeader
-      title={file.file}
-      subtitle={file.name}
-      avatar="https://image.flaticon.com/icons/svg/179/179483.svg"
+  <div key={i}>
+    <FileCard
+      type={file.type}
+      subject={file.subject}
+      subtitle={file.subtitle}
+      likes={file.likes}
+      time={file.time}
+      lenght={file.lenght}
     />
-  </Card>
+  </div>
 ));
 
 const Files = () => (
