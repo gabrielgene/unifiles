@@ -40,7 +40,7 @@ class Topbar extends Component {
   render() {
       return (
           <div className="Header">
-            <Menu styles={styles} width={'200px'} /> 
+            <Menu styles={styles} width={'50%'} /> 
             <div className="Logo">
                 <img
                     className="Logo-img"
