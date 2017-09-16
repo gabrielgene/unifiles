@@ -1,9 +1,10 @@
 
 import React, { Component } from 'react';
 import Autosuggest from 'react-autosuggest';
-import languages from './languages';
+import itens from './itens';
 import { escapeRegexCharacters } from './utils';
 import './search.css';
+import FileCard from '../FileCard';
 
 
 const getSuggestions = value => {
@@ -13,19 +14,26 @@ const getSuggestions = value => {
     return [];
   }
 
-  const regex = new RegExp('^' + escapedValue, 'i');
+  const regex = new RegExp(escapedValue, 'i');
 
-  return languages.filter(language => regex.test(language.name));
+  return itens.filter(item => regex.test(item.subject + item.subtitle));
 };
 
 const getSuggestionValue = suggestion => suggestion.name;
 
-const renderSuggestion = (suggestion) => {
-  console.log('render suggestion');
-  console.log(suggestion);
+const renderSuggestion = (file) => {
+  console.log('render file');
+  console.log(file);
   return (
     <span>
-      {suggestion.name}
+      <FileCard
+        type={file.type}
+        subject={file.subject}
+        subtitle={file.subtitle}
+        likes={file.likes}
+        time={file.time}
+        lenght={file.lenght}
+      />
     </span>
   )
 }
@@ -78,7 +86,7 @@ export default class Basic extends Component {
             getSuggestionValue={getSuggestionValue}
             renderSuggestion={renderSuggestion}
             inputProps={inputProps}
-            focusInputOnSuggestionClick={true}
+            focusInputOnSuggestionClick={false}
             id="basic-example"
           />
         </div>
