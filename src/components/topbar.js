@@ -7,7 +7,8 @@ const styles = {
     position: 'absolute',
     width: '30px',
     height: '20px',
-    top: '3%'
+    top: '20px',
+    
   },
   bmBurgerBars: {
     background: '#373a47'
@@ -48,6 +49,7 @@ class Topbar extends Component {
                     role="presentation"
                 />
             </div>
+            <img src="https://files.slack.com/files-pri/T758QBX47-F73JGEDLY/notificacoes.png?pub_secret=dabd98ee53" alt="notification" className="topbarNotification"/>
             <FormGroup
                 controlId="formBasicText"
             >
