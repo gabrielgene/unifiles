@@ -5,6 +5,7 @@ import itens from './itens';
 import { escapeRegexCharacters } from './utils';
 import './search.css';
 import FileCard from '../FileCard';
+import deburr from 'lodash.deburr';
 
 
 const getSuggestions = value => {
@@ -14,16 +15,14 @@ const getSuggestions = value => {
     return [];
   }
 
-  const regex = new RegExp(escapedValue, 'i');
+  const regex = new RegExp(deburr(escapedValue), 'i');
 
-  return itens.filter(item => regex.test(item.subject + item.subtitle));
+  return itens.filter(item => regex.test(deburr(item.subject + item.subtitle)));
 };
 
 const getSuggestionValue = suggestion => suggestion.name;
 
 const renderSuggestion = (file) => {
-  console.log('render file');
-  console.log(file);
   return (
     <span>
       <FileCard
