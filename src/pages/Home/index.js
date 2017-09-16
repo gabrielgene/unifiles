@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     return (
       <div className="">
-        <Topbar showSearch={ false } />
+        <Topbar showSearch={ true } />
         <div className="Landing">
           <Jumbotron bsClass="Landing">
             <div className="Landing-text-top">
