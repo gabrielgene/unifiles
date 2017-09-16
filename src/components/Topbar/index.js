@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { FormGroup, FormControl } from 'react-bootstrap'
-import Search from './Search';
+import Search from '../Search';
 import { bubble as Menu } from 'react-burger-menu';
+import './topbar.css'
 
 const styles = {
   bmBurgerButton: {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Jumbotron, Button } from 'react-bootstrap'
 import './home.css';
-import Topbar from '../../components/topbar'
+import Topbar from '../../components/Topbar'
 
 class Home extends Component {
   render() {
