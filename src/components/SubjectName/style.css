@@ -1,0 +1,25 @@
+.subjectName {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  background-color: #e7e7e7;
+}
+
+.imageSubject {
+  position: absolute;
+  left: 0px;
+}
+
+.infoWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.infoWrapper h1 {
+  position: relative;
+  top: 20px;
+  right: 38px;
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}

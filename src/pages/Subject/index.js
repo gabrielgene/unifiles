@@ -32,12 +32,12 @@ class Subject extends React.Component {
           <Tab
             icon={messageIcon}
           >
-            <h1>Mensaggens</h1>
+            <span>Mensaggens</span>
           </Tab>
           <Tab
             icon={linkIcon}
           >
-            <h1>Links</h1>
+            <span>Links</span>
           </Tab>
         </Tabs>
       </div>
