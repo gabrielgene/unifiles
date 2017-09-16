@@ -5,7 +5,7 @@ import MessageIcon from 'material-ui/svg-icons/communication/message';
 import LinkIcon from 'material-ui/svg-icons/content/link';
 import Upload from '../../components/Upload';
 import Files from '../../components/Files';
-import Topbar from '../../components/topbar';
+import Topbar from '../../components/Topbar';
 import SubjectName from '../../components/SubjectName';
 import './style.css'
 
@@ -18,7 +18,7 @@ class Subject extends React.Component {
   render() {
     return (
       <div>
-        <Topbar />
+        <Topbar showSearch={false} />
         <SubjectName />
         <Tabs>
           <Tab

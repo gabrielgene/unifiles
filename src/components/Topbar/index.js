@@ -10,7 +10,7 @@ const styles = {
     width: '30px',
     height: '20px',
     top: '20px',
-    
+
   },
   bmBurgerBars: {
     background: '#373a47'
@@ -48,6 +48,7 @@ class Topbar extends Component {
           <div className="Header">
             <Menu styles={styles} width={'50%'}>
                 <a className="sidebar-item" href="/">Perfil</a>
+                <a className="sidebar-item" href="/materia">Materia</a>
                 <a className="sidebar-item" href="/about">Configurações</a>
                 <a className="sidebar-item" href="/contact">Upload</a>
                 <a className="sidebar-item" href="/contact">Sobre</a>
