@@ -42,7 +42,7 @@ const styles = {
 class Topbar extends Component {
   render() {
       const showSearch = this.props.showSearch;
-      const topbarSearchButton = <img src="https://files.slack.com/files-pri/T758QBX47-F7486JL8J/lupa.png?pub_secret=c96be253b3" alt="SearchButton" className="topbarSearchButton"/>
+      const topbarSearchButton = <img className="topbarSearchButton" src="https://files.slack.com/files-pri/T758QBX47-F7486JL8J/lupa.png?pub_secret=c96be253b3" alt="SearchButton" />
       const toggleSearch = showSearch ? <Search /> : topbarSearchButton;
       return (
           <div className="Header">
