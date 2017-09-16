@@ -6,3 +6,9 @@
 .autosuggest {
   margin-top: 6 * 9px;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ }
