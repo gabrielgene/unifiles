@@ -1,6 +1,5 @@
 import React from 'react';
 import { Tabs, Tab } from 'material-ui/Tabs';
-import Paper from 'material-ui/Paper';
 import FileIcon from 'material-ui/svg-icons/editor/insert-drive-file';
 import MessageIcon from 'material-ui/svg-icons/communication/message';
 import LinkIcon from 'material-ui/svg-icons/content/link';
