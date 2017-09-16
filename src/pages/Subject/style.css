@@ -3,3 +3,8 @@
   bottom: 0px;
   width: 100%;
 }
+
+.imageFileSection {
+  display: inline-block;
+  width: 77px;
+}
