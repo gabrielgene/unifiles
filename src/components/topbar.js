@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FormGroup, FormControl } from 'react-bootstrap'
+import Search from './Search';
 
 
 class Topbar extends Component {
@@ -13,15 +14,7 @@ class Topbar extends Component {
                     role="presentation"
                 />
             </div>
-            <FormGroup
-                controlId="formBasicText"
-            >
-                <FormControl
-                    type="text"
-                    placeholder="O que você procura?"
-                />
-                <FormControl.Feedback />
-            </FormGroup>
+            <Search />
         </div>
       );
   }
