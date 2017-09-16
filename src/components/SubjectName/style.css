@@ -1,0 +1,39 @@
+.subjectName {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  background-color: #e7e7e7;
+}
+
+.imageSubject {
+  position: absolute;
+  left: 0px;
+  top: 47px;
+}
+
+.infoWrapper {
+  position: relative;
+  left: 45px;
+  top: 6px;
+}
+
+.infoWrapper h1 {
+  position: relative;
+  right: 38px;
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  margin-bottom: 0px;
+  margin-top: 3px;
+}
+
+.infoWrapper .title {
+  color: #a5a5a5;
+  font-size: 23px;
+}
+
+.starIcon {
+  position: relative;
+  top: 14px;
+  left: 38px;
+}
