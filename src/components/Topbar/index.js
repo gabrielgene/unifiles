@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { FormGroup, FormControl } from 'react-bootstrap'
-import Search from './Search';
+import Search from '../Search';
 import { bubble as Menu } from 'react-burger-menu';
+import './topbar.css'
 
 const styles = {
   bmBurgerButton: {
@@ -40,9 +41,17 @@ const styles = {
 
 class Topbar extends Component {
   render() {
+      const showSearch = this.props.showSearch;
+      const topbarSearchButton = <img src="https://files.slack.com/files-pri/T758QBX47-F7486JL8J/lupa.png?pub_secret=c96be253b3" alt="SearchButton" className="topbarSearchButton"/>
+      const toggleSearch = showSearch ? <Search /> : topbarSearchButton;
       return (
           <div className="Header">
-            <Menu styles={styles} width={'50%'} /> 
+            <Menu styles={styles} width={'50%'}>
+                <a className="sidebar-item" href="/">Perfil</a>
+                <a className="sidebar-item" href="/about">Configurações</a>
+                <a className="sidebar-item" href="/contact">Upload</a>
+                <a className="sidebar-item" href="/contact">Sobre</a>
+            </Menu>
             <div className="Logo">
                 <img
                     className="Logo-img"
@@ -50,7 +59,7 @@ class Topbar extends Component {
                     role="presentation"
                 />
             </div>
-            <Search />
+            { toggleSearch }
             <img src="https://files.slack.com/files-pri/T758QBX47-F73JGEDLY/notificacoes.png?pub_secret=dabd98ee53" alt="notification" className="topbarNotification"/>
         </div>
       );
