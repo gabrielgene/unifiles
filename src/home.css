@@ -1,0 +1,53 @@
+
+
+.Logo {
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.Logo-img {
+  width: 45%;
+  height: 45%;
+}
+
+.Header {
+  padding: 1% 2%;
+  /* padding-left: 2%;
+  padding-bottom: 1%; */
+  background: #e7e7e7;
+  margin-bottom: solid 2px black;
+}
+
+.Landing {
+  background: white;
+  padding: 3% 5%;
+}
+
+.Landing-img {
+  width: 100%;
+  height: 100%;
+}
+
+.Landing-text-top {
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #4393cc;
+}
+
+.Landing-text-button {
+  padding: 0 10px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Landing-text-bottom {
+  margin-top: 16px;
+  font-size: 19px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #4a4a4a;
+}

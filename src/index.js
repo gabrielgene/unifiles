@@ -2,6 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
+import Home from './home'
 
-ReactDOM.render(<h1>OK</h1>, document.getElementById('root'));
+ReactDOM.render(
+  <div>
+    <Home />
+  </div>
+, document.getElementById('root'));
 registerServiceWorker();
