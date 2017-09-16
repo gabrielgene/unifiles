@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { ControlLabel, Jumbotron, Button } from 'react-bootstrap'
+import { Jumbotron, Button } from 'react-bootstrap'
 import './home.css';
-import Topbar from '../../components/topbar'
+import Topbar from '../../components/Topbar'
 
 class Home extends Component {
   render() {
     return (
       <div className="">
-        <Topbar />
+        <Topbar showSearch={ true } />
         <div className="Landing">
           <Jumbotron bsClass="Landing">
             <div className="Landing-text-top">
