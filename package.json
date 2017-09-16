@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
+    "react-autocomplete": "^1.7.1",
+    "react-bootstrap": "^0.31.3",
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
