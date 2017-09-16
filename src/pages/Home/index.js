@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ControlLabel, Jumbotron, Button } from 'react-bootstrap'
+import { Jumbotron, Button } from 'react-bootstrap'
 import './home.css';
 import Topbar from '../../components/topbar'
 
@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     return (
       <div className="">
-        <Topbar />
+        <Topbar showSearch={ false } />
         <div className="Landing">
           <Jumbotron bsClass="Landing">
             <div className="Landing-text-top">
