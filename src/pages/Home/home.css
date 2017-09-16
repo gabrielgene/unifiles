@@ -19,6 +19,13 @@
   margin-bottom: solid 2px black;
 }
 
+.topbarNotification {
+  width: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .Landing {
   background: white;
   padding: 3% 5%;
