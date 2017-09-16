@@ -1,0 +1,10 @@
+.filesWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardFiles {
+  width: 95%;
+  margin-top: 5px;
+}
