@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { FormGroup, FormControl } from 'react-bootstrap';
+import { FormGroup, FormControl } from 'react-bootstrap'
+import Search from './Search';
 import { bubble as Menu } from 'react-burger-menu';
 
 const styles = {
@@ -49,16 +50,8 @@ class Topbar extends Component {
                     role="presentation"
                 />
             </div>
+            <Search />
             <img src="https://files.slack.com/files-pri/T758QBX47-F73JGEDLY/notificacoes.png?pub_secret=dabd98ee53" alt="notification" className="topbarNotification"/>
-            <FormGroup
-                controlId="formBasicText"
-            >
-                <FormControl
-                    type="text"
-                    placeholder="O que você procura?"
-                />
-                <FormControl.Feedback />
-            </FormGroup>
         </div>
       );
   }
