@@ -1,8 +1,9 @@
 import React from 'react';
 import './style.css';
+import {deburr} from 'lodash';
 
 const FileCard = (props) => (
-  <div className="card" >
+<div className="card" onClick={() => window.location.href = '/materia/'+ deburr(props.subject.toLowerCase().replace(/\s/g, ''))}>
     <div className="imageFileSection">
       {props.type === "Avaliação"
       ?

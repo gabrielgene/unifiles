@@ -5,7 +5,7 @@ import itens from './itens';
 import { escapeRegexCharacters } from './utils';
 import './search.css';
 import FileCard from '../FileCard';
-import deburr from 'lodash';
+import { deburr } from 'lodash';
 
 
 const getSuggestions = (value, data, hasData=false) => {
@@ -100,7 +100,6 @@ export default class Basic extends Component {
             getSuggestionValue={getSuggestionValue}
             renderSuggestion={renderSuggestion}
             inputProps={inputProps}
-            focusInputOnSuggestionClick={false}
             id="basic-example"
           />
         </div>

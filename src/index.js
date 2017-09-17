@@ -14,11 +14,12 @@ const App = () => (
   <MuiThemeProvider>
     <Router history={browserHistory}>
       <Route path="/" component={Home} />
-      <Route path="/materia" component={Subject} />
+      <Route path="/materia/:subject" component={Subject} />
       <Redirect path="**" to="/" />
     </Router>
   </MuiThemeProvider>
 )
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
 registerServiceWorker();
