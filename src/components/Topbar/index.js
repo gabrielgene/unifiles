@@ -26,9 +26,24 @@ class Topbar extends Component {
           docked={false}
           open={this.state.open}
           onRequestChange={open => this.setState({ open })}
+          className="Header-drawer"
+          containerStyle={{backgroundColor: 'rgb(77, 77, 77)'}}
         >
           <Menu>
-            <Divider />
+            <MenuItem
+              onClick={() => {
+                this.props.router.push('/')
+                this.setState({ open: false })
+              }
+              }
+            >
+            <img
+              className="Menu-img "
+              src="https://files.slack.com/files-pri/T758QBX47-F748SMN9H/menu_recorte.jpg?pub_secret=80d171624f"
+              role="presentation"
+            />
+            </MenuItem>
+            {/* <Divider />
             <MenuItem
               onClick={() => {
                 this.props.router.push('/')
@@ -82,7 +97,7 @@ class Topbar extends Component {
               }
               }
             />
-            <Divider />
+            <Divider /> */}
           </Menu>
         </Drawer>
         <div className="Logo">
