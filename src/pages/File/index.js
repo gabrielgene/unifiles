@@ -4,6 +4,7 @@ import NotFavorite from 'material-ui/svg-icons/action/favorite-border';
 import Warning from 'material-ui/svg-icons/alert/warning';
 import { Button } from 'react-bootstrap'
 import Topbar from '../../components/Topbar';
+import Comments from '../../components/Comment';
 import './style.css'
 
 export default class File extends React.Component {
@@ -56,6 +57,7 @@ export default class File extends React.Component {
             <Button block bsStyle="primary"><img src="" /><span className="Landing-button-text"> BAIXAR </span></Button>
           </div>
         </div>
+        <Comments />
       </div >
     )
   }
