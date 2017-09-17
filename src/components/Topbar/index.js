@@ -40,22 +40,38 @@ class Topbar extends Component {
             <Divider />
             <MenuItem
               primaryText="Favoritos"
-              onClick={() => this.props.router.push('/materia/calculo')}
+              onClick={() => {
+                this.props.router.push('/')
+                this.setState({ open: false })
+              }
+              }
             />
             <Divider />
             <MenuItem
               primaryText="Perfil"
-              onClick={() => this.props.router.push('/')}
+              onClick={() => {
+                this.props.router.push('/')
+                this.setState({ open: false })
+              }
+              }
             />
             <Divider />
             <MenuItem
               primaryText="Configurações"
-              onClick={() => this.props.router.push('/')}
+              onClick={() => {
+                this.props.router.push('/')
+                this.setState({ open: false })
+              }
+              }
             />
             <Divider />
             <MenuItem
               primaryText="Sobre"
-              onClick={() => this.props.router.push('/')}
+              onClick={() => {
+                this.props.router.push('/')
+                this.setState({ open: false })
+              }
+              }
             />
             <Divider />
           </Menu>
