@@ -5,7 +5,7 @@ import itens from './itens';
 import { escapeRegexCharacters } from './utils';
 import './search.css';
 import FileCard from '../FileCard';
-import deburr from 'lodash';
+import { deburr } from 'lodash';
 
 
 const getSuggestions = value => {
