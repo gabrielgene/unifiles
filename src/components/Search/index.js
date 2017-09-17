@@ -85,7 +85,6 @@ export default class Basic extends Component {
             getSuggestionValue={getSuggestionValue}
             renderSuggestion={renderSuggestion}
             inputProps={inputProps}
-            focusInputOnSuggestionClick={false}
             id="basic-example"
           />
         </div>
