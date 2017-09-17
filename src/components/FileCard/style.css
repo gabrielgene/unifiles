@@ -6,6 +6,11 @@
   display: flex;
 }
 
+.FileCard-img {
+  position: relative;
+  left: -10px;
+}
+
 .imageFileSection {
   display: inline-block;
   width: 77px;
