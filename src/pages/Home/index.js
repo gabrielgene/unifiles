@@ -17,7 +17,7 @@ class Home extends Component {
             </div>
             <img
               className="Landing-img"
-              src="//files.slack.com/files-pri/T758QBX47-F743X2KQT/img_home.png"
+              src="https://files.slack.com/files-pri/T758QBX47-F743X2KQT/img_home.png?pub_secret=fc05926a45"
               role="presentation"
             />
             <p className="Landing-text-bottom">
