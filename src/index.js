@@ -6,6 +6,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import registerServiceWorker from './registerServiceWorker';
 import Subject from './pages/Subject';
 import Home from './pages/Home';
+import Atendimento from './pages/Atendimento';
 import File from './pages/File';
 import './index.css';
 
@@ -16,6 +17,7 @@ const App = () => (
     <Router history={browserHistory}>
       <Route path="/" component={Home} />
       <Route path="/materia/:subject" component={Subject} />
+      <Route path="/atendimento" component={Atendimento} />
       <Route path="/materia/:subject/:id" component={File} />
       <Redirect path="**" to="/" />
     </Router>

@@ -66,6 +66,15 @@ class Topbar extends Component {
             />
             <Divider />
             <MenuItem
+              primaryText="Atendimento"
+              onClick={() => {
+                this.props.router.push('/atendimento')
+                this.setState({ open: false })
+              }
+              }
+            />
+            <Divider />
+            <MenuItem
               primaryText="Sobre"
               onClick={() => {
                 this.props.router.push('/')
