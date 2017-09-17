@@ -8,6 +8,7 @@ import Files from '../../components/Files';
 import Messages from '../../components/Files/messages';
 import Topbar from '../../components/Topbar';
 import SubjectName from '../../components/SubjectName';
+import InfoItem from '../../components/Info';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './style.css'
 
@@ -49,9 +50,7 @@ class Subject extends React.Component {
           <Messages />
         </TabPanel>
         <TabPanel>
-          <div>
-            <h3> CHupa GEne </h3>
-          </div>
+          <InfoItem />
         </TabPanel>
         </Tabs>
       </div>
