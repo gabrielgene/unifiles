@@ -11,56 +11,86 @@
   width: 100%;
 }
 
-.modal .imageFile {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 60px;
-}
-
-.modal img {
-  height: 122px;
-}
-
-.modalTitle {
-  position: relative;
-  top: 60px;
-  display: flex;
-  justify-content: center;
-}
-
 .modal h1 {
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
+  font-size: 26px;
+}
+
+.close {
+  position: fixed;
+  height: 55px;
+  margin: 15px;
+  right: 0px;
+}
+
+.imageFile {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.imageFile img {
+  height: 90px;
+}
+
+.modalTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.modalTitle h1 {
+  font-weight: bold;
 }
 
 .modalSubtitle {
-  position: relative;
   display: flex;
   justify-content: center;
-  top: 69px;
-  text-align: center;
+
 }
 
 .modalSubtitle h1 {
-  font-size: 25px;
-  width: 80%;
+ text-align: center;
+ font-size: 25px;
 }
 
-.modal-dialog {
+.fileModal h1 {
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.category h1 {
+  margin: 0px;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-bottom: 6px;
+}
+
+.subjectModal h1 {
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.modalInput {
   display: flex;
   justify-content: center;
 }
 
-.modal .close {
-  position: fixed;
-  right: 0px;
-  height: 56px;
-  margin: 21px;
+.modalInput input {
+  width: 90%;
 }
 
-.fade {
-  display: flex !important;
-  align-items: center;
+.selectField {
+  width: 90%;
+}
+
+.selectWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

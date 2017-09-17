@@ -12,7 +12,8 @@
     "react-burger-menu": "^2.1.6",
     "react-dom": "^15.6.1",
     "react-router": "^3.0.5",
-    "react-tap-event-plugin": "^2.0.1"
+    "react-tap-event-plugin": "^2.0.1",
+    "segmented-control": "^0.1.8"
   },
   "devDependencies": {
     "react-scripts": "1.0.13"
