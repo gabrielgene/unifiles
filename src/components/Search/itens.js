@@ -14,7 +14,7 @@ export default [
   { key: "calculoi", type: "Discussão", subject: "Cálculo I", subtitle: "Pergunta: como faz...", likes: "800", time: "Há 4 meses", },
   { key: "calculoi", type: "Discussão", subject: "Cálculo I", subtitle: "Vou perder em calc..", likes: "86", time: "Há 3 dias", },
 
-  // Banco de dados
+  // Algoritmos
   { key: "algoritmos", type: "Avaliação", subject: "Algoritmos", subtitle: "Loop for, while..", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
   { key: "algoritmos", type: "Avaliação", subject: "Algoritmos", subtitle: "Bancos não relaciona...", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
   { key: "algoritmos", type: "Atividade", subject: "Algoritmos", subtitle: "Média de 10 valores..", likes: "86", time: "Há 3 dias", lenght: "5,6 mb" },
