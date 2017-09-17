@@ -5,7 +5,7 @@ import itens from './itens';
 import { escapeRegexCharacters } from './utils';
 import './search.css';
 import FileCard from '../FileCard';
-import deburr from 'lodash.deburr';
+import deburr from 'lodash';
 
 
 const getSuggestions = value => {
@@ -35,13 +35,11 @@ const renderSuggestion = (file) => {
       />
     </span>
   )
-}
-  ;
+};
 
 export default class Basic extends Component {
   constructor() {
     super();
-
     this.state = {
       value: '',
       suggestions: []
