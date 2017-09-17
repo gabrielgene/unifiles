@@ -11,6 +11,10 @@
   width: 100%;
 }
 
+.modal {
+  z-index: 9999999999999999999999999;
+}
+
 .modal h1 {
   color: white;
   font-family: 'Montserrat', sans-serif;

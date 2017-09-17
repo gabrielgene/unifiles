@@ -52,7 +52,7 @@ export default class Upload extends React.Component {
               <FormGroup controlId="formControlsSelect">
                 <FormControl componentClass="select" placeholder="select">
                   <option value="select">Cálculo I</option>
-                  <option value="other">Bando de Dados </option>
+                  <option value="other">Algoritmos </option>
                 </FormControl>
               </FormGroup>
             </div>
