@@ -18,6 +18,7 @@ const linkIcon = <LinkIcon />;
 class Subject extends React.Component {
 
   render() {
+    console.log(this.props)
     return (
       <div>
         <Topbar showSearch={false} />
