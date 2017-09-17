@@ -1,16 +1,4 @@
 export default [
-<<<<<<< HEAD
-  { type: "Avaliação", subject: "Cálculo I", subtitle: "Derivadas e funções p...", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
-  { type: "Apostila", subject: "Cálculo I", subtitle: "Todos assuntos da u...", likes: "800", time: "Há 4 meses", lenght: "6 gb" },
-  { type: "Atividade", subject: "Cálculo I", subtitle: "Esbolçar gráficos", likes: "86", time: "Há 3 dias", lenght: "5,6 mb" },
-  { type: "Avaliação", subject: "Cálculo I", subtitle: "Derivadas e funções p...", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
-  { type: "Atividade", subject: "Cálculo I", subtitle: "Esbolçar gráficos", likes: "86", time: "Há 3 dias", lenght: "5,6 mb" },
-  { type: "Avaliação", subject: "Cálculo I", subtitle: "Derivadas e funções p...", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
-  { type: "Avaliação", subject: "Cálculo I", subtitle: "Derivadas e funções p...", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
-  { type: "Atividade", subject: "Cálculo I", subtitle: "Esbolçar gráficos", likes: "86", time: "Há 3 dias", lenght: "5,6 mb" },
-  { type: "Apostila", subject: "Cálculo I", subtitle: "Todos assuntos da u...", likes: "800", time: "Há 4 meses", lenght: "6 gb" },
-  { type: "Apostila", subject: "Cálculo I", subtitle: "Todos assuntos da u...", likes: "800", time: "Há 4 meses", lenght: "6 gb" },
-=======
   // Calculo I
   { key: "calculoi" type: "Avaliação", subject: "Cálculo I", subtitle: "Derivadas e funções p...", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
   { key: "calculoi" type: "Apostila", subject: "Cálculo I", subtitle: "Todos assuntos da u...", likes: "800", time: "Há 4 meses", lenght: "6 gb" },
@@ -29,7 +17,7 @@ export default [
   { key: "calculoi" type: "Discussão", subject: "Cálculo I", subtitle: "Duvida sobre Derivad...", likes: "35", time: "Há 2 semanas",  },
   { key: "calculoi" type: "Discussão", subject: "Cálculo I", subtitle: "Pergunta: como faz...", likes: "800", time: "Há 4 meses",  },
   { key: "calculoi" type: "Discussão", subject: "Cálculo I", subtitle: "Vou perder em calc..", likes: "86", time: "Há 3 dias",  },
-  
+
   // Banco de dados
   { key: "banco" type: "Avaliação", subject: "Banco de dados", subtitle: "Fazer queries em Sql..", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
   { key: "banco" type: "Avaliação", subject: "Banco de dados", subtitle: "Bancos não relaciona...", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
@@ -38,5 +26,4 @@ export default [
   { key: "banco" type: "Apostila", subject: "Banco de dados", subtitle: "Todos assuntos da u...", likes: "800", time: "Há 4 meses", lenght: "6 gb" },
   { key: "banco" type: "Discussão", subject: "Banco de dados", subtitle: "Facil demais banco..", likes: "800", time: "Há 4 horas" },
   { key: "banco" type: "Discussão", subject: "Banco de dados", subtitle: "Difícil demais, desisto.", likes: "800", time: "Há 4 meses" },
->>>>>>> 4273041430b30e1ea3052137fc88a2a8945a5c24
 ]
