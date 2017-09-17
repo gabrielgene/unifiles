@@ -21,9 +21,12 @@
 .react-tabs__tab-list {
   display: flex;
   justify-content: space-around;
-
+  position: fixed;
+  top: 170px;
+  width: 100%;
   background: #e7e7e7;
   padding: 0;
+  z-index: 9999;
 }
 
 .react-tabs__tab {
@@ -66,3 +69,17 @@
   background: grey;
 }
 
+.topBar {
+  position: fixed;
+  top: 0px;
+  z-index: 99999;
+}
+
+.content {
+  margin-top: 168px;
+  z-index: -9999;
+}
+
+.infoItensTab {
+  margin-top: 205px;
+}
