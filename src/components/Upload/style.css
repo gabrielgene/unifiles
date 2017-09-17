@@ -4,3 +4,63 @@
   right: 0px;
   margin: 20px;
 }
+
+.modal-content {
+  background-color: rgba(84, 84, 84, 0.95);
+  height: 640px;
+  width: 100%;
+}
+
+.modal .imageFile {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 60px;
+}
+
+.modal img {
+  height: 122px;
+}
+
+.modalTitle {
+  position: relative;
+  top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal h1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.modalSubtitle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 69px;
+  text-align: center;
+}
+
+.modalSubtitle h1 {
+  font-size: 25px;
+  width: 80%;
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+}
+
+.modal .close {
+  position: fixed;
+  right: 0px;
+  height: 56px;
+  margin: 21px;
+}
+
+.fade {
+  display: flex !important;
+  align-items: center;
+}
