@@ -26,9 +26,24 @@ class Topbar extends Component {
           docked={false}
           open={this.state.open}
           onRequestChange={open => this.setState({ open })}
+          className="Header-drawer"
+          containerStyle={{backgroundColor: 'rgb(77, 77, 77)'}}
         >
           <Menu>
-            <Divider />
+            <MenuItem
+              onClick={() => {
+                this.props.router.push('/')
+                this.setState({ open: false })
+              }
+              }
+            >
+            <img
+              className="Menu-img "
+              src="https://files.slack.com/files-pri/T758QBX47-F748SMN9H/menu_recorte.jpg?pub_secret=80d171624f"
+              role="presentation"
+            />
+            </MenuItem>
+            {/* <Divider />
             <MenuItem
               onClick={() => {
                 this.props.router.push('/')
@@ -82,14 +97,14 @@ class Topbar extends Component {
               }
               }
             />
-            <Divider />
+            <Divider /> */}
           </Menu>
         </Drawer>
         <div className="Logo">
           <img style={{ height: 50, position: 'fixed', left: 8, top: 6 }} src="https://files.slack.com/files-pri/T758QBX47-F7493T16E/menu_burger.png?pub_secret=22fb95f193" alt="menu" onClick={this.handleToggle} />
           <img
             className="Logo-img"
-            src="//files.slack.com/files-pri/T758QBX47-F7481B736/marca_big.png"
+            src="https://files.slack.com/files-pri/T758QBX47-F7481B736/marca_big.png?pub_secret=ab196d05b3"
             role="presentation"
             onClick={() => this.props.router.push('/')}
           />
