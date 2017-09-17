@@ -19,39 +19,39 @@ const linkIcon = <LinkIcon />;
 class Subject extends React.Component {
 
   render() {
-    console.log(this.props)
     return (
       <div>
         <Topbar showSearch={false} />
-        <SubjectName />
+        <SubjectName props={this.props} />
         <Tabs>
-        <TabList>
-          <Tab>
-            <div className="tab-text col-md-4">
-              ARQUIVOS
+          <TabList>
+            <Tab>
+              <div className="tab-text col-md-4">
+                ARQUIVOS
             </div>
-          </Tab>
-          <Tab>
-            <div className="tab-text col-md-4">
-              DISCUSSÕES
+            </Tab>
+            <Tab>
+              <div className="tab-text col-md-4">
+                DISCUSSÕES
             </div>
-          </Tab>
-          <Tab>
-            <div className="tab-text col-md-4 tab-info">
-              INFO
+            </Tab>
+            <Tab>
+              <div className="tab-text col-md-4 tab-info">
+                INFO
             </div>
-          </Tab>
-        </TabList>
+            </Tab>
+          </TabList>
 
-        <TabPanel>
-          <Files />
-        </TabPanel>
-        <TabPanel>
-          <Messages />
-        </TabPanel>
-        <TabPanel>
-          <InfoItem />
-        </TabPanel>
+          <TabPanel>
+            <Files props={this.props} />
+            <Upload disable={false} />
+          </TabPanel>
+          <TabPanel>
+            <Messages />
+          </TabPanel>
+          <TabPanel>
+            <InfoItem />
+          </TabPanel>
         </Tabs>
       </div>
     );

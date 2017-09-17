@@ -22,7 +22,6 @@ export default class SubjectName extends React.Component {
       <div onClick={this.toggleChange}>
         <NotFavorite style={{ height: 41, width: 44 }} />
       </div>
-    console.log(this.state)
 
     return (
       < div className="subjectName" >
@@ -31,7 +30,7 @@ export default class SubjectName extends React.Component {
         </div>
         <div className="infoWrapper">
           <h1 className="titleSubject title">Disciplina (ENG001)</h1>
-          <h1 className="subtitleSubject">CÁLCULO I</h1>
+          <h1 className="subtitleSubject">{this.props.props.params.subject === 'bancodedados' ? 'BANCO DE DADOS' : 'CÁLCULO I'}</h1>
         </div>
         <div className="starIcon">
           {star}

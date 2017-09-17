@@ -13,7 +13,10 @@
 
 .infoWrapper {
   position: relative;
-  left: 45px;
+  left: 13px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   top: 6px;
 }
 
@@ -30,10 +33,13 @@
 .infoWrapper .title {
   color: #a5a5a5;
   font-size: 23px;
+  width: 231px;
+  margin-left: 78px;
+  margin-right: 0px;
 }
 
 .starIcon {
   position: relative;
   top: 14px;
-  left: 38px;
+  left: 0px;
 }

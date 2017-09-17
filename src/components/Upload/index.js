@@ -10,7 +10,7 @@ import './style.css';
 export default class Upload extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { open: true }
+    this.state = { open: false }
   };
 
   handleOpen = () => {
