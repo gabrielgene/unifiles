@@ -8,45 +8,10 @@ import Drawer from 'material-ui/Drawer';
 import { withRouter } from 'react-router';
 import './topbar.css'
 
-const styles = {
-  bmBurgerButton: {
-    position: 'absolute',
-    width: '30px',
-    height: '20px',
-    top: '20px',
-
-  },
-  bmBurgerBars: {
-    background: '#373a47'
-  },
-  bmCrossButton: {
-    height: '24px',
-    width: '24px'
-  },
-  bmCross: {
-    background: '#bdc3c7'
-  },
-  bmMenu: {
-    background: '#373a47',
-    padding: '2.5em 1.5em 0',
-    fontSize: '1.15em'
-  },
-  bmMorphShape: {
-    fill: '#373a47'
-  },
-  bmItemList: {
-    color: '#b8b7ad',
-    padding: '0.8em'
-  },
-  bmOverlay: {
-    background: 'rgba(0, 0, 0, 0.3)'
-  }
-}
-
 class Topbar extends Component {
   constructor(props) {
     super(props);
-    this.state = { open: false }
+    this.state = { open: false, modal: false }
   }
 
   handleToggle = () => this.setState({ open: !this.state.open });
@@ -62,24 +27,38 @@ class Topbar extends Component {
           open={this.state.open}
           onRequestChange={open => this.setState({ open })}
         >
-            <Menu>
-              <Divider />
-              <MenuItem
-                onClick={() => this.props.router.push('/')}
-                primaryText="Inicio"
-              />
-              <Divider />
-              <MenuItem
-                primaryText="Materia"
-                onClick={() => this.props.router.push('/materia/calculo')}
-              />
-              <Divider />
-              <MenuItem
-                primaryText="Sobre"
-                onClick={() => this.props.router.push('/materia/calculo')}
-              />
-              <Divider />
-            </Menu>
+          <Menu>
+            <Divider />
+            <MenuItem
+              onClick={() => {
+                this.props.router.push('/')
+                this.setState({ open: false })
+              }
+              }
+              primaryText="Inicio"
+            />
+            <Divider />
+            <MenuItem
+              primaryText="Favoritos"
+              onClick={() => this.props.router.push('/materia/calculo')}
+            />
+            <Divider />
+            <MenuItem
+              primaryText="Perfil"
+              onClick={() => this.props.router.push('/')}
+            />
+            <Divider />
+            <MenuItem
+              primaryText="Configurações"
+              onClick={() => this.props.router.push('/')}
+            />
+            <Divider />
+            <MenuItem
+              primaryText="Sobre"
+              onClick={() => this.props.router.push('/')}
+            />
+            <Divider />
+          </Menu>
         </Drawer>
         <div className="Logo">
           <img style={{ height: 50, position: 'fixed', left: 8, top: 6 }} src="https://files.slack.com/files-pri/T758QBX47-F7493T16E/menu_burger.png?pub_secret=22fb95f193" alt="menu" onClick={this.handleToggle} />
@@ -87,6 +66,7 @@ class Topbar extends Component {
             className="Logo-img"
             src="//files.slack.com/files-pri/T758QBX47-F7481B736/marca_big.png"
             role="presentation"
+            onClick={() => this.props.router.push('/')}
           />
         </div>
         {toggleSearch}
