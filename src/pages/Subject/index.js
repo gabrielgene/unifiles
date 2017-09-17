@@ -8,6 +8,7 @@ import Files from '../../components/Files';
 import Messages from '../../components/Files/messages';
 import Topbar from '../../components/Topbar';
 import SubjectName from '../../components/SubjectName';
+import InfoItem from '../../components/Info';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './style.css'
 
@@ -24,36 +25,34 @@ class Subject extends React.Component {
         <Topbar showSearch={false} />
         <SubjectName />
         <Tabs>
-    <TabList>
-      <Tab>
-        <div className="tab-text col-md-4">
-          ARQUIVOS
-        </div>
-      </Tab>
-      <Tab>
-        <div className="tab-text col-md-4">
-          DISCUSSÕES
-        </div>
-      </Tab>
-      <Tab>
-        <div className="tab-text col-md-4 tab-info">
-          INFO
-        </div>
-      </Tab>
-    </TabList>
+        <TabList>
+          <Tab>
+            <div className="tab-text col-md-4">
+              ARQUIVOS
+            </div>
+          </Tab>
+          <Tab>
+            <div className="tab-text col-md-4">
+              DISCUSSÕES
+            </div>
+          </Tab>
+          <Tab>
+            <div className="tab-text col-md-4 tab-info">
+              INFO
+            </div>
+          </Tab>
+        </TabList>
 
-    <TabPanel>
-      <Files />
-    </TabPanel>
-    <TabPanel>
-      <Messages />
-    </TabPanel>
-    <TabPanel>
-      <div>
-        <h3> CHupa GEne </h3>
-      </div>
-    </TabPanel>
-  </Tabs>
+        <TabPanel>
+          <Files />
+        </TabPanel>
+        <TabPanel>
+          <Messages />
+        </TabPanel>
+        <TabPanel>
+          <InfoItem />
+        </TabPanel>
+        </Tabs>
       </div>
     );
   }

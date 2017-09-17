@@ -8,7 +8,7 @@ import FileCard from '../FileCard';
 import { deburr } from 'lodash';
 
 
-const getSuggestions = value => {
+const getSuggestions = (value, data, hasData=false) => {
   const escapedValue = escapeRegexCharacters(value.trim());
 
   if (escapedValue === '') {
@@ -16,8 +16,18 @@ const getSuggestions = value => {
   }
 
   const regex = new RegExp(deburr(escapedValue), 'i');
+  
+  let itensList;
 
-  return itens.filter(item => regex.test(deburr(item.subject + item.subtitle)));
+  if (hasData) {
+    console.log('hasdata entrou');
+    itensList = data;
+  } else {
+    console.log('hasdata não entrou entrou');
+    itensList = itens;
+  }
+
+  return itensList.filter(item => regex.test(deburr(item.subject + item.subtitle)));
 };
 
 const getSuggestionValue = suggestion => suggestion.name;
@@ -53,22 +63,29 @@ export default class Basic extends Component {
   };
 
   onSuggestionsFetchRequested = ({ value }) => {
+    const hasData = !!this.props.data;
     this.setState({
-      suggestions: getSuggestions(value)
+      suggestions: getSuggestions(value, this.props.data, hasData),
     });
+    if (this.props.hasCallback) {
+      this.props.onSearch()
+    }
   };
 
   onSuggestionsClearRequested = () => {
     this.setState({
       suggestions: []
     });
+    if (this.props.hasCallback) {
+      this.props.onClear()
+    }
   };
 
   render() {
     const { value, suggestions } = this.state;
     const inputProps = {
       className: "Search-input form-control",
-      placeholder: "O que você procura?",
+      placeholder: this.props.placeholder,
       value,
       onChange: this.onChange
     };
