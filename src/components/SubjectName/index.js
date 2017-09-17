@@ -30,7 +30,7 @@ export default class SubjectName extends React.Component {
         </div>
         <div className="infoWrapper">
           <h1 className="titleSubject title">Disciplina (ENG001)</h1>
-          <h1 className="subtitleSubject">{this.props.props.params.subject === 'bancodedados' ? 'BANCO DE DADOS' : 'CÁLCULO I'}</h1>
+          <h1 className="subtitleSubject">{this.props.props.params.subject === 'algoritmos' ? 'ALGORITMOS' : 'CÁLCULO I'}</h1>
         </div>
         <div className="starIcon">
           {star}

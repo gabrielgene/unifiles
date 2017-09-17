@@ -15,11 +15,11 @@ export default [
   { key: "calculoi", type: "Discussão", subject: "Cálculo I", subtitle: "Vou perder em calc..", likes: "86", time: "Há 3 dias", },
 
   // Banco de dados
-  { key: "bancodedados", type: "Avaliação", subject: "Banco de dados", subtitle: "Fazer queries em Sql..", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
-  { key: "bancodedados", type: "Avaliação", subject: "Banco de dados", subtitle: "Bancos não relaciona...", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
-  { key: "bancodedados", type: "Atividade", subject: "Banco de dados", subtitle: "Esbolçar tabelas", likes: "86", time: "Há 3 dias", lenght: "5,6 mb" },
-  { key: "bancodedados", type: "Apostila", subject: "Banco de dados", subtitle: "Todos assuntos da u...", likes: "800", time: "Há 4 meses", lenght: "6 gb" },
-  { key: "bancodedados", type: "Apostila", subject: "Banco de dados", subtitle: "Todos assuntos da u...", likes: "800", time: "Há 4 meses", lenght: "6 gb" },
-  { key: "bancodedados", type: "Discussão", subject: "Banco de dados", subtitle: "Facil demais banco..", likes: "800", time: "Há 4 horas" },
-  { key: "bancodedados", type: "Discussão", subject: "Banco de dados", subtitle: "Difícil demais, desisto.", likes: "800", time: "Há 4 meses" },
+  { key: "algoritmos", type: "Avaliação", subject: "Algoritmos", subtitle: "Loop for, while..", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
+  { key: "algoritmos", type: "Avaliação", subject: "Algoritmos", subtitle: "Bancos não relaciona...", likes: "35", time: "Há 2 semanas", lenght: "1,2 mb" },
+  { key: "algoritmos", type: "Atividade", subject: "Algoritmos", subtitle: "Média de 10 valores..", likes: "86", time: "Há 3 dias", lenght: "5,6 mb" },
+  { key: "algoritmos", type: "Apostila", subject: "Algoritmos", subtitle: "Todos assuntos da u...", likes: "800", time: "Há 4 meses", lenght: "6 gb" },
+  { key: "algoritmos", type: "Apostila", subject: "Algoritmos", subtitle: "Todos assuntos da u...", likes: "800", time: "Há 4 meses", lenght: "6 gb" },
+  { key: "algoritmos", type: "Discussão", subject: "Algoritmos", subtitle: "Facil demais..", likes: "800", time: "Há 4 horas" },
+  { key: "algoritmos", type: "Discussão", subject: "Algoritmos", subtitle: "Difícil demais, desisto.", likes: "800", time: "Há 4 meses" },
 ]
