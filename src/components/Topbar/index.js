@@ -43,7 +43,7 @@ class Topbar extends Component {
   render() {
       const showSearch = this.props.showSearch;
       const topbarSearchButton = <img className="topbarSearchButton" src="https://files.slack.com/files-pri/T758QBX47-F7486JL8J/lupa.png?pub_secret=c96be253b3" alt="SearchButton" />
-      const toggleSearch = showSearch ? <Search /> : topbarSearchButton;
+      const toggleSearch = showSearch ? <Search placeholder="O que você procura?" /> : topbarSearchButton;
       return (
           <div className="Header">
             <Menu styles={styles} width={'50%'}>
