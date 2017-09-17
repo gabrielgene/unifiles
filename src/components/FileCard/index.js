@@ -7,12 +7,15 @@ const FileCard = (props) => (
     <div className="imageFileSection">
       {props.type === "Avaliação"
       ?
-      <img src="https://files.slack.com/files-pri/T758QBX47-F73GLRMJ4/avaliacao.png?pub_secret=ed43c1a186" alt="avaliacao" />
+      <img className="FileCard-img" src="https://files.slack.com/files-pri/T758QBX47-F73GLRMJ4/avaliacao.png?pub_secret=ed43c1a186" alt="avaliacao" />
       : props.type === "Atividade"
       ?
-      <img src="https://files.slack.com/files-pri/T758QBX47-F746ATTU2/atividade.png?pub_secret=b76fbe5572" alt="atividade"/>
+      <img className="FileCard-img" src="https://files.slack.com/files-pri/T758QBX47-F746ATTU2/atividade.png?pub_secret=b76fbe5572" alt="atividade"/>
+      : props.type === "Apostila"
+      ?
+      <img className="FileCard-img" src="https://files.slack.com/files-pri/T758QBX47-F74C96C85/apostila.png?pub_secret=57211b2119" alt="apostila"/>
       :
-      <img src="https://files.slack.com/files-pri/T758QBX47-F74C96C85/apostila.png?pub_secret=57211b2119" alt="apostila"/>
+      <img className="FileCard-img" src="https://files.slack.com/files-pri/T758QBX47-F746AUPQS/discussao01.png?pub_secret=8c2ebc4a62" alt="message"/>
       }
     </div>
     <div className="infoSection">
