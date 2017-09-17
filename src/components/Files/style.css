@@ -1,3 +1,16 @@
+.FileSearch-wrapper {
+  margin-bottom: -8px;
+  padding: 8px;
+  background: #e7e7e7;
+  border-bottom: solid #aaaaaa 10px;
+}
+
+.form-control {
+  border: solid #aaaaaa 2px;
+}
+
+
+
 .card {
   border-bottom: solid 1px #aaaaaa;
   background-color: #e6e6e6;
