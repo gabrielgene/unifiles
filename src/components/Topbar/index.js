@@ -80,7 +80,7 @@ class Topbar extends Component {
           <img style={{ height: 50, position: 'fixed', left: 8, top: 6 }} src="https://files.slack.com/files-pri/T758QBX47-F7493T16E/menu_burger.png?pub_secret=22fb95f193" alt="menu" onClick={this.handleToggle} />
           <img
             className="Logo-img"
-            src="//files.slack.com/files-pri/T758QBX47-F7481B736/marca_big.png"
+            src="https://files.slack.com/files-pri/T758QBX47-F7481B736/marca_big.png?pub_secret=ab196d05b3"
             role="presentation"
             onClick={() => this.props.router.push('/')}
           />
